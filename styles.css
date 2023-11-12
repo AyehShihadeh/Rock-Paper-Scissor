@@ -1,0 +1,107 @@
+
+    html, body{
+    height: auto;
+    width: 100%;
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    } 
+
+    p{
+      font-size: 18px;
+
+    }
+
+    .title{
+      font-size: 32px;
+    }
+
+    .choiceButton{
+      border-color: var(--choice-button-border-color);
+      border-radius: 50%;
+      background-color: var(--choice-button-bg);
+      width: 75px;
+      height: 75px;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .choiceButton:hover{
+      background-color: var(--choice-button-hover);
+    }
+
+    .choiceButton:focus{
+      background-color: var(--choice-button-focus);
+    }
+
+    .reset-button{
+      font-size: 18px;
+      background-color: var(--reset-button-bg);
+      border-color: var(--reset-button-border-color);
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    .reset-button:hover{
+      background-color: var(--reset-button-hover);
+    }
+
+    .result{
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .container{
+      display: flex;
+      align-items: center;
+    }
+
+    .theme-light{
+      --bg-color: white;
+      --font-color: black;
+      --choice-button-bg: lightblue;
+      --choice-button-hover: rgb(107, 191, 219);
+      --choice-button-focus:lightgreen;
+      --choice-button-border-color: black;
+      --reset-button-bg: lightblue;
+      --reset-button-hover: rgb(107, 191, 219);
+      --reset-button-border-color:black;
+      --theme-button-bg: lightblue;
+      --theme-button-hover: rgb(107, 191, 219);
+      --theme-button-border-color: black;
+
+    }
+
+
+    .theme-dark{
+      --bg-color: black;
+      --font-color: white; 
+      --choice-button-bg: yellowgreen;
+      --choice-button-hover: green; 
+      --choice-button-focus:green;
+      --choice-button-border-color: white;
+      --reset-button-bg: yellowgreen;
+      --reset-button-hover: green;
+      --reset-button-border-color:white;
+      --theme-button-bg: yellowgreen;
+      --theme-button-hover: green;
+      --theme-button-border-color: white;
+    }
+
+    .themeButton{
+      background-color: var(--theme-button-bg);
+      cursor: pointer;
+      border-radius: 50%;
+      margin: 10px;
+      border-color: var(--theme-button-border-color);
+    }
+
+    .themeButton:hover{
+      background-color: var(--theme-button-hover);
+    }

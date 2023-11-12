@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>ROCK PAPER SCISSOR</title>
+</head>
+<body>
+
+
+  <p class="title">Rock Paper Scissors</p>
+
+
+  <div class="choices">
+
+    <button class="choiceButton" onclick="
+    playGame('rock'); //using userchoice to start game function
+  "><img src="IMAGES/rock.png" alt="rock hand gesture" id="rock-logo"></button>
+
+  <button class="choiceButton" onclick="
+    playGame('paper'); 
+  "><img src="IMAGES/paper.png" alt="paper hand gesture" id="paper-logo"></button>
+
+  <button class="choiceButton" onclick="
+    playGame('scissor'); 
+  "><img src="IMAGES/scissor.png" alt="scissor hand gesture" id="scissor-logo"></button>
+
+  </div>
+
+
+  <br>
+  <p class="js-result result"></p>
+
+  <p class="js-moves"></p>
+
+  <p class="js-score"></p>
+  <br>
+
+  <div class="container">
+    <button onclick="
+    score.wins=0;
+    score.losses=0;
+    score.ties=0;
+    localStorage.removeItem('scoreString'); //removes score from local storage
+    alert('score has been reset');
+    updateScoreHTML();
+    resetHTML();
+  " class="reset-button">Reset Score</button>
+
+  <button class="themeButton" onclick="
+  toggleTheme();
+  ">
+  <img src="IMAGES/theme1.png" alt="theme icon" id="themeIcon">
+  </button>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
